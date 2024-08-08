@@ -49,7 +49,7 @@ function Dashboard() {
         </div>
         <div
           className={`relative ${isTableVisible ? "block" : "hidden"} ${
-            isOrderBookVisible ? "md:w-1/2 xs:w-full" : "w-full"
+            isOrderBookVisible ? "md:!w-1/2 w-full md:m-0 my-2" : "w-full"
           }`}
         >
           <Layout

@@ -53,8 +53,8 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="flex items-center gap-4" ref={menuRef}>
-      <div className="relative">
+    <div className="md:flex items-center gap-4 md:!p-0 p-4" ref={menuRef}>
+      <div className="relative md:!p-0 py-3">
         <Button
           bgColor="#3EA2F4"
           color="white"
@@ -86,7 +86,7 @@ function Navbar() {
           action={setActiveProduct}
         />
       </div>
-      <div className="relative w-fit">
+      <div className="relative md:!p-0 py-3 w-fit">
         <Button
           bgColor="#3EA2F4"
           color="white"
@@ -115,7 +115,7 @@ function Navbar() {
           action={setPriceIncrement}
         />
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 md:!p-0 py-4">
         <CbboItem
           label={"Best Bid"}
           value={bestBidData?.price}

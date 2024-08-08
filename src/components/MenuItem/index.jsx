@@ -19,7 +19,7 @@ function MenuItem({ isMenuOpen, setIsMenuOpen, label, options, action }) {
   return (
     <>
       {isMenuOpen && (
-        <div className="absolute top-10 z-[999] bg-[#1F2A31] rounded-md w-full overflow-y-auto h-48 menu-container min-w-96">
+        <div className="absolute md:!top-10 top-14 z-[999] bg-[#1F2A31] rounded-md w-full overflow-y-auto h-48 menu-container min-w-96">
           <div className="p-2">
             <input
               type="text"

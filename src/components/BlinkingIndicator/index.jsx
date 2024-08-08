@@ -3,7 +3,7 @@ import useWebSocketStore from "@/store/useWebSocketStore";
 const BlinkingIndicator = () => {
   const { connection } = useWebSocketStore();
   return (
-    <div className="relative">
+    <div className="relative md:block hidden">
       <span
         className={`text-gray-300 text-xs font-semibold ${
           connection ? "" : "!line-through"
